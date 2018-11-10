@@ -1,0 +1,247 @@
+/*general css that applies to most elements*/
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    color: #777777;
+    background: url("../images/hypnotize.png");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}  
+
+h1,h2,h3,p{
+    margin-bottom: 20px
+}
+
+/* changes the bottom margin to 0px on the last paragraph only*/
+p:last-child{
+    margin-bottom: 0;
+}
+
+h1,h2,h3{
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: #4aaaa5;
+
+}
+h1{
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #dddddd;
+}
+
+h2, h3{
+    font-size: 22px;
+}
+
+/* css for the header*/
+#pgheader{
+    position: fixed; /* header stays in the same place following you as you scroll*/
+    z-index: 99; /* sends the content to the front*/
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #ffffff;
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+}
+
+#headerName{
+    float: left;
+    width: 250px;
+    height: 90px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background: #4aaaa5;
+  
+}
+
+nav{
+    float: right;
+    margin-top: 25px;
+}
+
+/* these css effects are applied to 'a' elements within the 'nav' element*/
+nav a { 
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+  }
+
+/* removes the left border line on just the first navigation link */
+nav a:first-child {
+    border-left: 0 none;
+}
+
+/* css code for the footer */
+
+footer {
+    padding: 30px 0;
+    clear: both;
+    font-size: 12px;
+    color: #ffffff;
+    color: #cccccc;
+    text-align: center;
+    background: #666666;
+    border-top: 8px solid #4aaaa5;
+    height: 50px;
+  }
+  
+h3, h2 {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    border-bottom: 2px solid #eeeeee;
+}
+  
+#indexCont{
+    padding-top: 130px;
+    min-height: calc(100vh - 70px);
+}
+  
+.bdycontent{
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+}
+/*---------------------------------------------*/
+.project {
+    position: relative;
+    float: left;
+    width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
+}
+  
+.project:nth-child(even) {
+    margin-right: 40px;
+}
+  
+.project img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+}
+  
+.project h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+}
+    
+.profpic{
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+#conForm ul {
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+  
+#conForm li {
+    margin-bottom: 10px;
+}
+/*css formatting for basic form elements*/
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #dddddd;
+}
+textarea {
+  height: 200px;
+}
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
+
+
+  
+  
+  
+
+
+
+/*
+.pgheader{
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+}
+
+.headerName{
+
+    float: left;
+    width: 30%;
+    display: block;
+    padding: 8px;
+    margin: 0;
+    
+}
+.navbar{
+    list-style-type: none;
+    float: left;
+   
+}
+.navitem{
+    float: left;
+    background-color: #dddddd;
+    display: block;
+    padding: 8px;
+
+}
+
+.bdycontent{
+    clear: left;
+}
+*/
